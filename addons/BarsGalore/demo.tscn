@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c605u5tddh6n7"]
+
+[ext_resource type="Script" uid="uid://bncv6fkcdu0h7" path="res://addons/BarsGalore/StaminaRing.gd" id="1_rvevw"]
+[ext_resource type="Script" uid="uid://dm64c28tna8a1" path="res://addons/BarsGalore/DoubleBar.gd" id="2_us25w"]
+
+[node name="Control" type="Control" unique_id=1082624255]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StaminaBar" type="Control" parent="." unique_id=1271760737]
+anchors_preset = 0
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 165.0
+offset_bottom = 152.0
+script = ExtResource("1_rvevw")
+value = 75.0
+point_count = 100
+color = Color(1.4439226e-07, 0.59141815, 0.043110266, 1)
+antialiased = false
+width = 20.0
+metadata/_custom_type_script = "uid://bncv6fkcdu0h7"
+
+[node name="DoubleBar" type="Control" parent="." unique_id=1401938023]
+anchors_preset = 0
+offset_left = 9.0
+offset_top = 176.0
+offset_right = 470.0
+offset_bottom = 330.0
+script = ExtResource("2_us25w")
+bar_two_color = Color(0, 0.4067743, 0.19267115, 1)
+bar_one_width = 25.0
+bar_two_width = 15.0
+antialiased = false
+bar_two_size_offset = 15.0
+metadata/_custom_type_script = "uid://dm64c28tna8a1"
