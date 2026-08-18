@@ -14,14 +14,12 @@ grow_vertical = 2
 
 [node name="StaminaBar" type="Control" parent="." unique_id=1271760737]
 anchors_preset = 0
-offset_left = 1.0
-offset_top = -2.0
-offset_right = 165.0
-offset_bottom = 152.0
+offset_top = -1.0
+offset_right = 164.0
+offset_bottom = 153.0
 script = ExtResource("1_rvevw")
-value = 75.0
-point_count = 100
-color = Color(1.4439226e-07, 0.59141815, 0.043110266, 1)
+point_count = 50
+color = Color(0, 0.972549, 0, 1)
 antialiased = false
 width = 20.0
 metadata/_custom_type_script = "uid://bncv6fkcdu0h7"

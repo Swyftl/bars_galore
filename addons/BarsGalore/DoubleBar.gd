@@ -29,6 +29,5 @@ func _draw():
 	
 	var rect_one: Rect2i = Rect2i(bar_one_size_offset/2, rect_height-(bar_one_width/2), (rect_one_percentage)*(size.x - bar_one_size_offset), bar_one_width)
 	var rect_two: Rect2i = Rect2i(bar_two_size_offset/2, rect_height-(bar_two_width/2), (rect_two_percentage)*(size.x - bar_two_size_offset), bar_two_width)
-	
 	draw_rect(rect_one, bar_one_color, true, -1.0, antialiased)
 	draw_rect(rect_two, bar_two_color, true, -1.0, antialiased)

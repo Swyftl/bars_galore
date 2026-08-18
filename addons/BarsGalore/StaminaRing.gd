@@ -11,6 +11,7 @@ extends Control
 @export var color : Color = Color.ALICE_BLUE
 @export var antialiased : bool = true
 @export var width : float = 2.0
+@export var rounded_edges : bool = true
 
 func _enter_tree():
 	pass
@@ -41,3 +42,7 @@ func _draw() -> void:
 		width,
 		antialiased
 	)
+	if rounded_edges:
+		draw_circle(Vector2(center.x, center.y - radius), width/2, color, true, -1.0, antialiased)
+		var end_position := center + Vector2(cos(end_angle), sin(end_angle)) * radius
+		draw_circle(end_position, width/2, color, true, -1.0, antialiased)
