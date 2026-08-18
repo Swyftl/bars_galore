@@ -1,7 +1,7 @@
 @tool
 @icon("res://addons/BarsGalore/StaminaBar.svg")
 
-class_name ParellelBar
+class_name ParallelBar
 extends Control
 
 @export var valueOne : float = 100
