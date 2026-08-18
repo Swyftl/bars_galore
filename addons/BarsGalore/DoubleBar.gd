@@ -27,8 +27,10 @@ func _process(_delta):
 	queue_redraw()
 
 func _draw():
+	# Changes the height to be the true center
 	var rect_height: float = size.y / 2
 	
+	# Gets the percentage of the two values
 	var rect_one_percentage: float = value_one/value_one_max
 	var rect_two_percentage: float = value_two/value_two_max
 	
