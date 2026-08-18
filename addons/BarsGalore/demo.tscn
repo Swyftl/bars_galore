@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bncv6fkcdu0h7" path="res://addons/BarsGalore/StaminaRing.gd" id="1_rvevw"]
 [ext_resource type="Script" uid="uid://dm64c28tna8a1" path="res://addons/BarsGalore/DoubleBar.gd" id="2_us25w"]
+[ext_resource type="Script" uid="uid://omwrpv8yapy0" path="res://addons/BarsGalore/ParallelBar.gd" id="3_lnemh"]
 
 [node name="Control" type="Control" unique_id=1082624255]
 layout_mode = 3
@@ -38,3 +39,13 @@ bar_two_width = 15.0
 antialiased = false
 bar_two_size_offset = 15.0
 metadata/_custom_type_script = "uid://dm64c28tna8a1"
+
+[node name="ParellelBar" type="Control" parent="." unique_id=1427488304]
+anchors_preset = 0
+offset_left = 3.0
+offset_top = 298.0
+offset_right = 607.0
+offset_bottom = 445.0
+script = ExtResource("3_lnemh")
+antialiased = false
+metadata/_custom_type_script = "uid://omwrpv8yapy0"
