@@ -42,10 +42,9 @@ metadata/_custom_type_script = "uid://dm64c28tna8a1"
 
 [node name="ParellelBar" type="Control" parent="." unique_id=1427488304]
 anchors_preset = 0
-offset_left = 3.0
-offset_top = 298.0
-offset_right = 607.0
-offset_bottom = 445.0
+offset_left = 1.0
+offset_top = 299.0
+offset_right = 605.0
+offset_bottom = 446.0
 script = ExtResource("3_lnemh")
-antialiased = false
 metadata/_custom_type_script = "uid://omwrpv8yapy0"

@@ -8,8 +8,13 @@ extends Control
 @export var valueTwo : float = 100
 @export var valueOneMax : float = 100
 @export var valueTwoMax : float = 100
+@export_category("Style")
 @export var barHeight : float = 10
 @export var antialiased : bool = true
+@export var roundCorners : bool = true
+@export_category("Colours")
+@export var barOneColor : Color = Color.BLUE
+@export var barTwoColor : Color = Color.RED
 
 func _process(delta: float) -> void:
 	queue_redraw()
@@ -30,5 +35,8 @@ func _draw() -> void:
 	var barOneRect : Rect2 = Rect2(center_x - one_width, center_y, one_width, barHeight)
 	var barTwoRect : Rect2 = Rect2(center_x, center_y, two_width, barHeight)
 	
-	draw_rect(barOneRect, Color.BLUE, true, -1.0, antialiased)
-	draw_rect(barTwoRect, Color.RED, true, -1.0, antialiased)
+	draw_rect(barOneRect, barOneColor, true, -1.0, antialiased)
+	draw_rect(barTwoRect, barTwoColor, true, -1.0, antialiased)
+	if roundCorners:
+		draw_circle(Vector2(center_x - one_width, center_y+(barHeight/2)), barHeight/2, barOneColor, true, -1.0, antialiased)
+		draw_circle(Vector2(center_x+two_width, center_y+(barHeight/2)), barHeight/2, barTwoColor, true, -1.0, antialiased)
