@@ -14,10 +14,7 @@ extends Control
 func _process(delta: float) -> void:
 	queue_redraw()
 
-func _draw() -> void:
-	print(valueOne/valueOneMax)
-	print(valueTwo/valueTwoMax)
-	
+func _draw() -> void:	
 	var center_x : float =  size.x * 0.5
 	var center_y : float = size.y * 0.5 - barHeight * 0.5
 	
