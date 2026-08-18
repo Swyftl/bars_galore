@@ -4,16 +4,21 @@
 class_name ParallelBar
 extends Control
 
+@export_category("Values")
 @export var valueOne : float = 100
-@export var valueTwo : float = 100
 @export var valueOneMax : float = 100
+@export var valueTwo : float = 100
 @export var valueTwoMax : float = 100
-@export_category("Style")
+
+@export_category("Shared Values")
 @export var barHeight : float = 10
 @export var antialiased : bool = true
 @export var roundCorners : bool = true
-@export_category("Colours")
+
+@export_category("Bar One")
 @export var barOneColor : Color = Color.BLUE
+
+@export_category("Bar Two")
 @export var barTwoColor : Color = Color.RED
 
 func _process(delta: float) -> void:

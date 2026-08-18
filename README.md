@@ -1,5 +1,5 @@
 # Bars Galore
-Bars galore is an addon for godot that adds new bars to use in godot.
+Bars galore is an addon for Godot that adds new bars to use in godot.
 
 ## StaminaRing
 The stamina ring is a circular bar similar to what you would find in the legend of zelda, breath of the wild.

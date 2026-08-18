@@ -4,18 +4,23 @@
 class_name DoubleBar
 extends Control
 
+@export_category("Values")
 @export var value_one : float = 100
 @export var value_two : float = 100
 @export var value_one_max : float = 100
 @export var value_two_max : float = 100
 
 @export_category("Visual")
-@export var bar_one_color : Color = Color.GREEN
-@export var bar_two_color : Color = Color.BLUE
-@export var bar_one_width : float = 10.0
-@export var bar_two_width : float = 5.0
 @export var antialiased : bool = true
+
+@export_group("Bar One")
+@export var bar_one_color : Color = Color.GREEN
+@export var bar_one_width : float = 10.0
 @export var bar_one_size_offset : float = 0.0
+
+@export_group("Bar Two")
+@export var bar_two_color : Color = Color.BLUE
+@export var bar_two_width : float = 5.0
 @export var bar_two_size_offset : float = 0.0
 
 func _process(_delta):

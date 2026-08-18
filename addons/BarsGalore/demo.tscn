@@ -20,8 +20,8 @@ offset_bottom = 153.0
 script = ExtResource("1_rvevw")
 point_count = 50
 color = Color(0, 0.972549, 0, 1)
-antialiased = false
 width = 20.0
+antialiased = false
 metadata/_custom_type_script = "uid://bncv6fkcdu0h7"
 
 [node name="DoubleBar" type="Control" parent="." unique_id=1401938023]
@@ -31,10 +31,10 @@ offset_top = 176.0
 offset_right = 470.0
 offset_bottom = 330.0
 script = ExtResource("2_us25w")
-bar_two_color = Color(0, 0.4067743, 0.19267115, 1)
-bar_one_width = 25.0
-bar_two_width = 15.0
 antialiased = false
+bar_one_width = 25.0
+bar_two_color = Color(0, 0.4067743, 0.19267115, 1)
+bar_two_width = 15.0
 bar_two_size_offset = 15.0
 metadata/_custom_type_script = "uid://dm64c28tna8a1"
 

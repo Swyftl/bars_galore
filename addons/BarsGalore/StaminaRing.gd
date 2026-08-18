@@ -4,14 +4,16 @@
 class_name StaminaBar
 extends Control
 
+@export_category("Values")
 @export var value : float = 100
 @export var max_value : float = 100
-@export_group("Visual")
-@export var point_count : int = 20
+
+@export_category("Visual")
+@export var point_count : int = 100
 @export var color : Color = Color.ALICE_BLUE
-@export var antialiased : bool = true
 @export var width : float = 2.0
 @export var rounded_edges : bool = true
+@export var antialiased : bool = true
 
 func _enter_tree():
 	pass
