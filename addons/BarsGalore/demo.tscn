@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bncv6fkcdu0h7" path="res://addons/BarsGalore/StaminaRing.gd" id="1_rvevw"]
 [ext_resource type="Script" uid="uid://dm64c28tna8a1" path="res://addons/BarsGalore/DoubleBar.gd" id="2_us25w"]
 [ext_resource type="Script" uid="uid://omwrpv8yapy0" path="res://addons/BarsGalore/ParallelBar.gd" id="3_lnemh"]
+[ext_resource type="Script" uid="uid://j75p4xf3gwnu" path="res://addons/BarsGalore/DottedBar.gd" id="4_7fky6"]
 
 [node name="Control" type="Control" unique_id=1082624255]
 layout_mode = 3
@@ -47,3 +48,14 @@ offset_bottom = 340.0
 script = ExtResource("3_lnemh")
 antialiased = false
 metadata/_custom_type_script = "uid://omwrpv8yapy0"
+
+[node name="DottedBar" type="Control" parent="." unique_id=1683555987]
+anchors_preset = 0
+offset_left = 5.0
+offset_top = 354.0
+offset_right = 484.0
+offset_bottom = 394.0
+script = ExtResource("4_7fky6")
+value = 77.155
+antialiased = false
+metadata/_custom_type_script = "uid://j75p4xf3gwnu"
