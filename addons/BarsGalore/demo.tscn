@@ -56,6 +56,4 @@ offset_top = 354.0
 offset_right = 484.0
 offset_bottom = 394.0
 script = ExtResource("4_7fky6")
-value = 77.155
-antialiased = false
 metadata/_custom_type_script = "uid://j75p4xf3gwnu"
