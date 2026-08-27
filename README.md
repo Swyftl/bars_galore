@@ -1,32 +1,23 @@
 # Bars Galore
-Bars galore is an addon for Godot that adds new bars to use in godot.
 
-## StaminaRing
-The stamina ring is a circular bar similar to what you would find in the legend of zelda, breath of the wild.
+Bars Galore is a plugin for Godot 4.4+ that adds multiple UI bars that show values in different ways.
 
-## Double Bar
-The double bar is two bars contained in one. A larger, thicker bar below, and a smaller one on top. This could be useful for loading bars, showing overall loading completion, and completion of specific elements of loading.
+## Installation
 
-## Parallel bar
-The parallel bar is two bars that start from the center of the node, the first bar moving out to the left, and the second moving out to the right. This can be used in things like multiplayer games, showing who is closer to a milestone or objective.
+### Installing with Godot Asset Store (Godot 4.7+)
+Head into the Godot asset store. Find the plugin by searching Bars Galore. And simply hit Install.
 
-## Dotted Bar
-The dotted bar is a bar that shows dots across a line, and the dots disappearing to represent the given value compared to the max value.
+### GitHub Releases
+Download the zip from the GitHub releases (Latest version recommended). Drag and drop the addons folder in that zip into the root folder for your project.
 
-## Radial Dial
-A ring with a pin in the middle. Similar as to something you would see in Fallout Power Armor UI, or in a hot water boiler, or a kettle.
+### From Source Code
+Download the source code in a zip on GitHub. When downloading keep going through the folders until you find a folder containing the addons folder, delete everything BUT the addons folder, and drag and drop that into the root folder of your project.
 
-# How To Use
-## Github Release
-Download the ZIP file from the latest release and dropping it into your projects root.
+## Contributing
 
-## Godot asset store
-The godot asset store, in the later versions of Godot is a simple installation. Simply find it in the asset store, downloadit and godot will do the rest.
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-## Source Code
-Download the zipped contents of the repository. open that zip when downloaded, go into the bars-galore-main folder, and inside that folder, delete everything other than the addons folder, and then drop that into the root of your project files.
+## License
 
-# Versioning Information
-I use semantic versioning. [MAJOR.MINOR.PATCH] e.g. V1.2.1
-
-The way versioning works with Bars Galore is quite simple. If I make changes to something that doesn't require changes on your end when installing the update, I will increase the patch number. If something I change may break projects with older versions of the plugin, I will increase the MINOR. If i EVER rewrite the plugin as a whole, I will increase the MAJOR version (I doubt that will ever happen though).
+[MIT](https://github.com/Swyftl/bars_galore/blob/main/addons/BarsGalore/LICENSE)
