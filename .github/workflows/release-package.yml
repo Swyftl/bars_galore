@@ -17,10 +17,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create ZIP (addons root, no -main folder)
+      - name: Create ZIP (with addons folder at root)
         run: |
-          cd addons
-          zip -r ../BarsGalore-${{ github.ref_name }}.zip .
+          zip -r BarsGalore-addon.zip addons
 
       - name: Upload ZIP to GitHub Release
         uses: softprops/action-gh-release@v2
