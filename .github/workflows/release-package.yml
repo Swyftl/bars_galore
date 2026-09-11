@@ -1,0 +1,27 @@
+name: Package BarsGalore Addon
+
+on:
+  release:
+    types: [published]
+  # Optional: allow manual runs
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create ZIP (addons root, no -main folder)
+        run: |
+          cd addons
+          zip -r ../BarsGalore-${{ github.ref_name }}.zip .
+
+      - name: Upload ZIP to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: BarsGalore-${{ github.ref_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
