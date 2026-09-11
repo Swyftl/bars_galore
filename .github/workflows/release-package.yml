@@ -6,6 +6,9 @@ on:
   # Optional: allow manual runs
   workflow_dispatch:
 
+permissions:
+  contents: write   # required to create/update releases and upload assets
+
 jobs:
   package:
     runs-on: ubuntu-latest
