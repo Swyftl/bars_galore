@@ -30,9 +30,6 @@ func _draw() -> void:
 	## Render the pin, getting the angle in the circle from 0-1
 	var pinPercentage: float = value/maxValue
 	var pinAngle: float = pinStartAngle + (pinEndAngle - pinStartAngle) * pinPercentage
-	
-	print(pinPercentage)
-	print(pinAngle)
 
 	var angle_rad: float = deg_to_rad(pinAngle+90)
 	var pin_length: float = radius * pin_percentage
