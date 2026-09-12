@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://omwrpv8yapy0" path="res://addons/BarsGalore/ParallelBar/ParallelBar.gd" id="3_lnemh"]
 [ext_resource type="Script" uid="uid://j75p4xf3gwnu" path="res://addons/BarsGalore/DottedBar/DottedBar.gd" id="4_7fky6"]
 [ext_resource type="Script" uid="uid://jegwkgaprep7" path="res://addons/BarsGalore/RadialDial/RadialDial.gd" id="5_3tfbo"]
+[ext_resource type="Script" uid="uid://xtpuqt4gncqv" path="res://addons/BarsGalore/TexturedDottedBar/TexturedDottedBar.gd" id="6_uhl8q"]
+[ext_resource type="Texture2D" uid="uid://co8a7743nn1x8" path="res://BarsGaloreLogo.png" id="7_smve1"]
 
 [node name="Control" type="Control" unique_id=1082624255]
 layout_mode = 3
@@ -67,3 +69,14 @@ offset_right = 199.0
 offset_bottom = 586.0
 script = ExtResource("5_3tfbo")
 metadata/_custom_type_script = "uid://jegwkgaprep7"
+
+[node name="TexturedDottedBar" type="Control" parent="." unique_id=198555983]
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 599.0
+offset_right = 356.0
+offset_bottom = 639.0
+script = ExtResource("6_uhl8q")
+texture = ExtResource("7_smve1")
+texture_size_offset = Vector2(1000, 1000)
+metadata/_custom_type_script = "uid://xtpuqt4gncqv"
